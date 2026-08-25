@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IoT-Based Ghee Quality Monitoring System</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f7f5;color:#202124;line-height:1.6}
+  .hero{background:linear-gradient(135deg,#1f2937,#374151);color:white;padding:70px 8% 55px}
+  .hero .tag{display:inline-block;padding:7px 13px;border:1px solid #9ca3af;border-radius:20px;font-size:13px;margin-bottom:18px}
+  h1{font-size:clamp(34px,6vw,58px);line-height:1.08;margin:0 0 18px;max-width:900px}
+  .hero p{font-size:18px;max-width:780px;color:#e5e7eb}
+  .container{max-width:1050px;margin:auto;padding:45px 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .card{background:white;border:1px solid #e5e7eb;border-radius:16px;padding:24px;box-shadow:0 5px 18px rgba(0,0,0,.04)}
+  h2{font-size:30px;margin:0 0 20px}
+  h3{margin-top:0}
+  .section{margin-bottom:48px}
+  .tech{display:inline-block;background:#eef2f7;border-radius:20px;padding:7px 12px;margin:5px;font-size:14px}
+  .steps{counter-reset:step;display:grid;gap:14px}
+  .step{background:white;border-left:4px solid #374151;padding:16px 18px;border-radius:8px}
+  .step strong{display:block;margin-bottom:4px}
+  .grades{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grade{background:white;border:1px solid #e5e7eb;border-radius:14px;padding:20px}
+  .grade b{font-size:20px}
+  footer{background:#111827;color:#d1d5db;text-align:center;padding:28px}
+  .note{font-size:13px;color:#6b7280}
+  @media(max-width:650px){.grades{grid-template-columns:1fr}.hero{padding:50px 7% 40px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="tag">ACADEMIC PROJECT • IoT • EMBEDDED SYSTEM</div>
+  <h1>IoT-Based Ghee Quality Monitoring System</h1>
+  <p>A compact IoT-based system designed to monitor key environmental and quality-related parameters of ghee and classify its quality into three grades using sensor data.</p>
+</header>
+
+<main class="container">
+
+<section class="section">
+  <h2>Project Overview</h2>
+  <div class="card">
+    <p>
+      The project aims to provide a simple and low-cost approach for monitoring ghee quality using an ESP32-based sensing system.
+      Multiple sensors collect relevant parameters, the readings are processed by the microcontroller, and the system classifies the sample into
+      <strong>Grade A, Grade B, or Grade C</strong> based on the observed parameter values.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Problem Statement</h2>
+  <div class="card">
+    <p>
+      Traditional quality assessment can require manual inspection or laboratory-based testing. This project explores an automated,
+      sensor-based method that can provide quick monitoring and a simple quality classification for ghee samples.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Objectives</h2>
+  <div class="grid">
+    <div class="card"><h3>Monitor</h3><p>Collect sensor readings related to the sample and its surrounding conditions.</p></div>
+    <div class="card"><h3>Process</h3><p>Use the ESP32 to acquire and process sensor data in real time.</p></div>
+    <div class="card"><h3>Classify</h3><p>Map the measured parameters to three quality categories: A, B, and C.</p></div>
+    <div class="card"><h3>Display</h3><p>Present readings and the resulting grade through an LCD interface.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Technologies & Components</h2>
+  <div class="card">
+    <span class="tech">ESP32</span>
+    <span class="tech">DHT11</span>
+    <span class="tech">Moisture Sensor</span>
+    <span class="tech">Gas Sensor</span>
+    <span class="tech">16×2 I2C LCD</span>
+    <span class="tech">Bluetooth Serial</span>
+    <span class="tech">Embedded C/C++</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step"><strong>1. Sample & sensing</strong> The ghee sample is evaluated using the connected sensors.</div>
+    <div class="step"><strong>2. Data acquisition</strong> The ESP32 reads the sensor values through its input interfaces.</div>
+    <div class="step"><strong>3. Parameter evaluation</strong> The collected values are compared with the project's defined quality criteria.</div>
+    <div class="step"><strong>4. Quality classification</strong> The system assigns the sample to Grade A, B, or C according to the combined parameter readings.</div>
+    <div class="step"><strong>5. Output</strong> The measured values and quality grade can be displayed on the LCD and communicated through Bluetooth Serial.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Quality Classification</h2>
+  <div class="grades">
+    <div class="grade"><b>Grade A</b><p>Higher-quality range according to the project's defined sensor criteria.</p></div>
+    <div class="grade"><b>Grade B</b><p>Intermediate-quality range according to the project's defined sensor criteria.</p></div>
+    <div class="grade"><b>Grade C</b><p>Lower-quality range according to the project's defined sensor criteria.</p></div>
+  </div>
+  <p class="note">Note: The exact threshold values are project-specific and should be updated here if you have finalized calibration values.</p>
+</section>
+
+<section class="section">
+  <h2>My Contribution</h2>
+  <div class="card">
+    <ul>
+      <li>Worked on the sensor-based monitoring concept and system integration.</li>
+      <li>Worked with ESP32 and sensor interfacing.</li>
+      <li>Implemented the quality classification concept based on measured parameters.</li>
+      <li>Integrated LCD output and Bluetooth Serial communication.</li>
+      <li>Tested the system using different sample conditions.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Applications</h2>
+  <div class="grid">
+    <div class="card"><h3>Food Quality Monitoring</h3><p>Can support quick preliminary quality assessment of edible products.</p></div>
+    <div class="card"><h3>Small-Scale Processing</h3><p>Useful as a low-cost monitoring concept for small food-processing environments.</p></div>
+    <div class="card"><h3>IoT & Embedded Learning</h3><p>Demonstrates sensor integration, microcontroller processing, classification, and communication.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Project Highlights</h2>
+  <div class="card">
+    <ul>
+      <li>Low-cost embedded monitoring approach</li>
+      <li>Multiple sensor parameters combined for classification</li>
+      <li>Real-time LCD-based output</li>
+      <li>Bluetooth-based serial communication</li>
+      <li>Three-level quality classification: A / B / C</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Future Improvements</h2>
+  <div class="card">
+    <p>
+      The system can be extended with cloud connectivity, mobile dashboards, larger datasets for calibration,
+      machine-learning-based classification, improved sensor calibration, and a dedicated enclosure for practical deployment.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>IoT-Based Ghee Quality Monitoring System</strong><br>
+  Academic Project Portfolio
+</footer>
+
+</body>
+</html>
