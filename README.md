@@ -125,6 +125,6 @@ Ghee Quality: Grade A
 
 A detailed project portfolio is available in:
 
-`ghee_quality_monitoring_portfolio.html`
+`index.html`
 
 You can open the HTML file from this repository to view the project presentation and details.
